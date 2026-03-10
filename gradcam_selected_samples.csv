@@ -1,0 +1,5 @@
+type,filepath
+both_correct_benign,master_dataset/mendeley/benign/qr_359_benign_images.png
+both_correct_malicious,master_dataset/mendeley/malicious/qr_7_malicious_images.png
+kaggle_wrong_balanced_correct_benign,master_dataset/mendeley/benign/qr_475_benign_images.png
+kaggle_wrong_balanced_correct_malicious,master_dataset/mendeley/malicious/qr_244_malicious_images.png
