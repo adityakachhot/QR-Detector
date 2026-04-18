@@ -1,0 +1,117 @@
+================================================================================
+FEATURE ANALYSIS: MALICIOUS vs BENIGN QR CODES
+================================================================================
+
+Dataset: 240 Malicious, 260 Benign
+
+--------------------------------------------------------------------------------
+STATISTICAL COMPARISON (t-test)
+--------------------------------------------------------------------------------
+
+
+BRIGHTNESS_MEAN
+  Malicious: Mean=149.6882, Std=3.0137
+  Benign:    Mean=148.9726, Std=2.3871
+  t-statistic: 2.9543, p-value: 0.003282
+  Cohen's d: 0.2632  *** SIGNIFICANT ***
+
+BRIGHTNESS_STD
+  Malicious: Mean=125.5171, Std=0.5855
+  Benign:    Mean=125.6556, Std=0.4132
+  t-statistic: -3.0739, p-value: 0.002228
+  Cohen's d: -0.2733  *** SIGNIFICANT ***
+
+CONTRAST
+  Malicious: Mean=255.0000, Std=0.0000
+  Benign:    Mean=255.0000, Std=0.0000
+  t-statistic: nan, p-value: nan
+  Cohen's d: nan  
+
+EDGE_DENSITY
+  Malicious: Mean=0.1654, Std=0.0044
+  Benign:    Mean=0.1667, Std=0.0026
+  t-statistic: -4.0693, p-value: 0.000055
+  Cohen's d: -0.3608  *** SIGNIFICANT ***
+
+COLOR_VARIANCE
+  Malicious: Mean=125.5171, Std=0.5855
+  Benign:    Mean=125.6556, Std=0.4132
+  t-statistic: -3.0739, p-value: 0.002228
+  Cohen's d: -0.2733  *** SIGNIFICANT ***
+
+HISTOGRAM_ENTROPY
+  Malicious: Mean=0.9776, Std=0.0066
+  Benign:    Mean=0.9792, Std=0.0047
+  t-statistic: -3.0762, p-value: 0.002212
+  Cohen's d: -0.2735  *** SIGNIFICANT ***
+
+BLACK_PIXEL_RATIO
+  Malicious: Mean=0.4130, Std=0.0118
+  Benign:    Mean=0.4158, Std=0.0094
+  t-statistic: -2.9543, p-value: 0.003282
+  Cohen's d: -0.2632  *** SIGNIFICANT ***
+
+WHITE_PIXEL_RATIO
+  Malicious: Mean=0.5870, Std=0.0118
+  Benign:    Mean=0.5842, Std=0.0094
+  t-statistic: 2.9543, p-value: 0.003282
+  Cohen's d: 0.2632  *** SIGNIFICANT ***
+
+BW_RATIO
+  Malicious: Mean=0.7042, Std=0.0342
+  Benign:    Mean=0.7122, Std=0.0274
+  t-statistic: -2.8750, p-value: 0.004214
+  Cohen's d: -0.2562  *** SIGNIFICANT ***
+
+TEXTURE_VARIANCE
+  Malicious: Mean=11941.3848, Std=357.5523
+  Benign:    Mean=12041.9429, Std=226.3703
+  t-statistic: -3.7868, p-value: 0.000171
+  Cohen's d: -0.3360  *** SIGNIFICANT ***
+
+HORIZONTAL_SYMMETRY
+  Malicious: Mean=0.6612, Std=0.0179
+  Benign:    Mean=0.6595, Std=0.0139
+  t-statistic: 1.1503, p-value: 0.250564
+  Cohen's d: 0.1025  
+
+VERTICAL_SYMMETRY
+  Malicious: Mean=0.6589, Std=0.0197
+  Benign:    Mean=0.6624, Std=0.0170
+  t-statistic: -2.1350, p-value: 0.033249
+  Cohen's d: -0.1905  *** SIGNIFICANT ***
+
+================================================================================
+TOP DISCRIMINATIVE FEATURES (by Cohen's d)
+================================================================================
+
+edge_density.................. d=-0.3608 (p=0.000055)
+  Higher in Benign: Mal=0.1654, Ben=0.1667
+
+texture_variance.............. d=-0.3360 (p=0.000171)
+  Higher in Benign: Mal=11941.3848, Ben=12041.9429
+
+histogram_entropy............. d=-0.2735 (p=0.002212)
+  Higher in Benign: Mal=0.9776, Ben=0.9792
+
+brightness_std................ d=-0.2733 (p=0.002228)
+  Higher in Benign: Mal=125.5171, Ben=125.6556
+
+color_variance................ d=-0.2733 (p=0.002228)
+  Higher in Benign: Mal=125.5171, Ben=125.6556
+
+black_pixel_ratio............. d=-0.2632 (p=0.003282)
+  Higher in Benign: Mal=0.4130, Ben=0.4158
+
+brightness_mean............... d= 0.2632 (p=0.003282)
+  Higher in Malicious: Mal=149.6882, Ben=148.9726
+
+white_pixel_ratio............. d= 0.2632 (p=0.003282)
+  Higher in Malicious: Mal=0.5870, Ben=0.5842
+
+bw_ratio...................... d=-0.2562 (p=0.004214)
+  Higher in Benign: Mal=0.7042, Ben=0.7122
+
+vertical_symmetry............. d=-0.1905 (p=0.033249)
+  Higher in Benign: Mal=0.6589, Ben=0.6624
+

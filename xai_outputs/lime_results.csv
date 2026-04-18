@@ -1,0 +1,5 @@
+image,label,prediction,confidence,top_features
+qr_359_benign_images.png,both_correct_benign,Benign,0.5147,10
+qr_7_malicious_images.png,both_correct_malicious,Malicious,0.5415,10
+qr_475_benign_images.png,kaggle_wrong_balanced_correct_benign,Benign,0.5172,10
+qr_244_malicious_images.png,kaggle_wrong_balanced_correct_malicious,Benign,0.5028,10

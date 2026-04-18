@@ -1,0 +1,89 @@
+======================================================================
+MODEL UNCERTAINTY ANALYSIS SUMMARY
+======================================================================
+
+OVERALL STATISTICS:
+  Total predictions: 200
+  Mean confidence: 0.4988
+  Std dev of confidence: 0.2950
+  Mean uncertainty (std): 0.0402
+  Mean entropy: 0.5026
+
+PREDICTION BREAKDOWN:
+
+  Benign:
+    Count: 117
+    Mean probability: 0.1623
+    Mean confidence: 0.6753
+    Mean uncertainty: 0.0289
+
+  Malicious:
+    Count: 83
+    Mean probability: 0.6250
+    Mean confidence: 0.2500
+    Mean uncertainty: 0.0562
+
+======================================================================
+HIGH UNCERTAINTY PREDICTIONS (Top 10):
+======================================================================
+
+Image: master_dataset/kaggle/malicious/malicious_388011.png
+  Prediction: Benign (49.95%)
+  Uncertainty (std): 0.1240
+  Entropy: 0.6931
+  95% CI: [0.2582, 0.6638]
+
+Image: master_dataset/kaggle/malicious/malicious_371237.png
+  Prediction: Benign (49.30%)
+  Uncertainty (std): 0.0818
+  Entropy: 0.6930
+  95% CI: [0.3536, 0.6266]
+
+Image: master_dataset/kaggle/malicious/malicious_386147.png
+  Prediction: Malicious (50.85%)
+  Uncertainty (std): 0.0643
+  Entropy: 0.6930
+  95% CI: [0.3810, 0.5930]
+
+Image: master_dataset/kaggle/malicious/malicious_392307.png
+  Prediction: Malicious (50.94%)
+  Uncertainty (std): 0.0643
+  Entropy: 0.6930
+  95% CI: [0.3879, 0.5910]
+
+Image: master_dataset/kaggle/malicious/malicious_318342.png
+  Prediction: Benign (48.91%)
+  Uncertainty (std): 0.0930
+  Entropy: 0.6929
+  95% CI: [0.2955, 0.6005]
+
+Image: master_dataset/kaggle/malicious/malicious_386047.png
+  Prediction: Benign (48.25%)
+  Uncertainty (std): 0.0740
+  Entropy: 0.6925
+  95% CI: [0.2909, 0.5699]
+
+Image: master_dataset/kaggle/malicious/malicious_333060.png
+  Prediction: Benign (48.21%)
+  Uncertainty (std): 0.0705
+  Entropy: 0.6925
+  95% CI: [0.3406, 0.5852]
+
+Image: master_dataset/kaggle/malicious/malicious_357664.png
+  Prediction: Benign (47.82%)
+  Uncertainty (std): 0.0800
+  Entropy: 0.6922
+  95% CI: [0.3326, 0.6216]
+
+Image: master_dataset/kaggle/malicious/malicious_373510.png
+  Prediction: Malicious (52.66%)
+  Uncertainty (std): 0.0762
+  Entropy: 0.6917
+  95% CI: [0.3665, 0.6176]
+
+Image: master_dataset/kaggle/malicious/malicious_339598.png
+  Prediction: Benign (46.88%)
+  Uncertainty (std): 0.0581
+  Entropy: 0.6912
+  95% CI: [0.3535, 0.5423]
+
